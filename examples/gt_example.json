@@ -1,0 +1,34 @@
+{
+  "samples": [
+    {
+      "sample_id": "sessionA_000001",
+      "pose": "顶面",
+      "color_state": "纯红",
+      "face": "TOP",
+      "center_xyz_m": [0.010, -0.030, 0.515],
+      "normal": [0.0, 0.0, -1.0],
+      "dihedral_deg": null,
+      "laser": "单平面"
+    },
+    {
+      "sample_id": "sessionA_000002",
+      "pose": "单侧面",
+      "color_state": "红左蓝右",
+      "face": "SIDE",
+      "center_xyz_m": [0.012, -0.028, 0.512],
+      "normal": [-1.0, 0.0, 0.0],
+      "dihedral_deg": null,
+      "laser": "单平面"
+    },
+    {
+      "sample_id": "sessionA_000003",
+      "pose": "折角双面",
+      "color_state": "红左蓝右",
+      "face": "SIDE",
+      "center_xyz_m": [0.015, -0.025, 0.508],
+      "normal": [0.0, -1.0, 0.0],
+      "dihedral_deg": 90.0,
+      "laser": "折角"
+    }
+  ]
+}

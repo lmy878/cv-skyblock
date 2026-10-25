@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyblock"
+version = "0.1.0"
+description = "Red/blue sky-block detection: YOLOv8-seg + RealSense 3D pose + colour state"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+train = ["ultralytics>=8.3,<9", "Pillow>=10"]
+realtime = ["opencv-python>=4.8", "open3d>=0.18", "pyrealsense2>=2.55; platform_system == 'Linux'"]
+dev = ["pytest>=8", "ruff>=0.5", "opencv-python-headless>=4.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

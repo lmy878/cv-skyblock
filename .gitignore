@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Data / artefacts (never commit these)
+datasets/
+runs/
+weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.bag
+*.db3
+depth_raw/
+captures/
+test_data/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
